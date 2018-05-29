@@ -7,16 +7,17 @@
 echo -e "***tcp-mon installer***\n"
 echo -e "Notice: It will be installed into /usr/local/bin automatically\n"
 echo -e "For Modification, you can read https://github.com/LuRenJiasWorld/tcp-mon for detail\n"
-echo -n "Do you want tcp-mon to be install to /usr/local/bin? You can type tcpmon at any directory without type in the full path.[Y/N]" 
+echo -n "Do you want tcp-mon to be install to /usr/local/bin? You can type tcpmon at any directory without type in the full path.[Y/N] " 
 read answer
 
-if [ $answer == "Y" ] 
+echo -e "\n"
+if [ $answer == "Y" ] || [ $answer == "y" ] 
 then
     cd /usr/local/bin/
     wget https://raw.githubusercontent.com/LuRenJiasWorld/tcp-mon/master/tcpmon.sh
     mv tcpmon.sh tcpmon
     chmod +x tcpmon
-    echo "Installation Complete! You can type tcpmon now and enjoy it!"
+    echo -e "\n ----Installation Complete! You can type tcpmon now and enjoy it!----"
 else
-    echo "OK, Installation interrupt."
+    echo -e "\nOK, Installation interrupt."
 fi
