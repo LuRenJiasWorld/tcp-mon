@@ -19,6 +19,7 @@ Tcp-mon will automatically installed into `/usr/local/bin`, and if you want to m
 2. Edit it with your favorate editor
 3. Find `# This directory can be modified` hint
 4. Modified the directory with what you like
+5. Run `chmod +x ./install.sh && ./install.sh`
 
 In addition, you can also download the tcpmon.sh and run it ( after properly permission modification using `chmod` or so ) without installation.
 
