@@ -13,7 +13,9 @@ read answer
 echo -e "\n"
 if [ $answer == "Y" ] || [ $answer == "y" ] 
 then
+    # This directory can be modified
     cd /usr/local/bin/
+
     wget https://raw.githubusercontent.com/LuRenJiasWorld/tcp-mon/master/tcpmon.sh
     mv tcpmon.sh tcpmon
     chmod +x tcpmon
